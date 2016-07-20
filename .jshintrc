@@ -1,0 +1,24 @@
+{
+    "boss": true,
+    "browser": true,
+    "curly": true,
+    "eqeqeq": true,
+    "eqnull": true,
+    "expr": true,
+    "immed": true,
+    "noarg": true,
+    "node": true,
+    "onevar": true,
+    "predef" : [
+        "define"
+    ],
+    "globals": {
+        "self": false
+    },
+    "quotmark": "double",
+    "smarttabs": true,
+    "strict": true,
+    "trailing": true,
+    "undef": true,
+    "unused": true
+}
