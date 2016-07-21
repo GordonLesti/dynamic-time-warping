@@ -1,0 +1,21 @@
+{
+  "name": "dynamic-time-warping",
+  "version": "1.0.0",
+  "description": "Dynamic time warping for Javascript",
+  "main": "src/dynamic-time-warping.js",
+  "authors": [
+    "Gordon Lesti <info@gordonlesti.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "dynamic",
+    "time",
+    "warping"
+  ],
+  "homepage": "https://github.com/GordonLesti/dynamic-time-warping",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "test"
+  ]
+}

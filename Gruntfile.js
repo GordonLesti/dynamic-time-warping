@@ -1,41 +1,6 @@
 module.exports = function( grunt ) {
     "use strict";
-    var key, browsers = [
-
-        // Windows 7
-        { browserName: "chrome", version: "46", platform: "Windows 7" },
-        { browserName: "firefox", version: "41", platform: "Windows 7" },
-        { browserName: "internet explorer", version: "9", platform: "Windows 7" },
-        { browserName: "internet explorer", version: "10", platform: "Windows 7" },
-        { browserName: "internet explorer", version: "11", platform: "Windows 7" },
-
-        // Windows 8.1
-        { browserName: "chrome", version: "46", platform: "Windows 8.1" },
-        { browserName: "firefox", version: "41", platform: "Windows 8.1" },
-        { browserName: "internet explorer", version: "11", platform: "Windows 8.1" },
-
-        // Windows 10
-        { browserName: "chrome", version: "46", platform: "Windows 10" },
-        { browserName: "firefox", version: "41", platform: "Windows 10" },
-        { browserName: "internet explorer", version: "11", platform: "Windows 10" },
-
-        // Apple Mac
-        { browserName: "chrome", version: "46", platform: "OS X 10.11" },
-        { browserName: "firefox", version: "41", platform: "OS X 10.11" },
-        { browserName: "safari", version: "9", platform: "OS X 10.11" },
-
-        // Linux
-        { browserName: "chrome", version: "46", platform: "Linux" },
-        { browserName: "firefox", version: "41", platform: "Linux" },
-
-        // Apple iOS
-        { browserName: "iphone", version: "8.4" },
-        { browserName: "ipad", version: "8.4" },
-
-        // Google Android
-        { browserName: "android", version: "4.4" },
-        { browserName: "android", version: "5.1" }
-    ];
+    var key;
 
     grunt.initConfig( {
         pkg: grunt.file.readJSON( "package.json" ),
@@ -103,19 +68,6 @@ module.exports = function( grunt ) {
                 options: {
                     base: "",
                     port: 9999
-                }
-            }
-        },
-        "saucelabs-qunit": {
-            all: {
-                options: {
-                    urls: [ "http://127.0.0.1:9999/test/index.html" ],
-                    tunnelTimeout: 5,
-                    build: process.env.TRAVIS_JOB_ID,
-                    concurrency: 3,
-                    browsers: browsers,
-                    testname: "qunit tests",
-                    tags: [ "master" ]
                 }
             }
         },
