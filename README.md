@@ -6,8 +6,8 @@
 [![Coverage Status][ico-coverall]][link-coveralls]
 [![Total Downloads][ico-downloads]][link-downloads]
 
-[Dynamic time warping](https://en.wikipedia.org/wiki/Dynamic_time_warping) for Javascript. A simple usecase would be
-[Touch signature identification with Javascript](https://gordonlesti.com/touch-signature-identification-with-javascript/)
+[Dynamic time warping](https://en.wikipedia.org/wiki/Dynamic_time_warping) for JavaScript. A simple usecase would be
+[Touch signature identification with JavaScript](https://gordonlesti.com/touch-signature-identification-with-javascript/)
 for example.
 
 ## Install
